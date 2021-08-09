@@ -5,8 +5,21 @@
     <groupId>com.cyh</groupId>
     <artifactId>EBPT</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <dependencyManagement>
+        <dependencies>
+            <!-- 代替spring-boot-starter-parent的方案 -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>{version.spring.boot}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <name>EBPT</name>
     <description>Demo project for Spring Boot</description>
+    <packaging>pom</packaging>
     <modules>
         <module>ebptonline-war</module>
         <module>ebptasy-war</module>
@@ -19,6 +32,4 @@
         <mainproject>ebptonline-war</mainproject>
     </properties>
 
-    <build>
-    </build>
 </project>
