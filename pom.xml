@@ -23,7 +23,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <name>EBPT</name>
+    <name>电子商务考试</name>
     <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
     <modules>
@@ -31,8 +31,5 @@
         <module>ebptasy-war</module>
         <module>ebptbatch-war</module>
         <module>ebptpub-jar</module>
-
     </modules>
-
-
 </project>
