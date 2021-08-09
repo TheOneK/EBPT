@@ -5,13 +5,19 @@
     <groupId>com.cyh</groupId>
     <artifactId>EBPT</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <properties>
+        <java.version>1.8</java.version>
+        <version.spring.boot>2.5.3</version.spring.boot>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <mainproject>ebptonline-war</mainproject>
+    </properties>
     <dependencyManagement>
         <dependencies>
             <!-- 代替spring-boot-starter-parent的方案 -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>{version.spring.boot}</version>
+                <version>${version.spring.boot}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -27,10 +33,6 @@
         <module>ebptpub-jar</module>
 
     </modules>
-    <properties>
-        <java.version>1.8</java.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <mainproject>ebptonline-war</mainproject>
-    </properties>
+
 
 </project>
