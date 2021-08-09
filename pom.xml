@@ -8,6 +8,7 @@
     <properties>
         <java.version>1.8</java.version>
         <version.spring.boot>2.5.3</version.spring.boot>
+        <version.maven-war-plugin>3.1.0</version.maven-war-plugin>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mainproject>ebptonline-war</mainproject>
     </properties>
