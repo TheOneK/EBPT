@@ -10,5 +10,6 @@ public class UUID32 {
     public static String newGUID() {
         UUID uuid = UUID.randomUUID();
         return uuid.toString().replace("-", "");
+
     }
 }
