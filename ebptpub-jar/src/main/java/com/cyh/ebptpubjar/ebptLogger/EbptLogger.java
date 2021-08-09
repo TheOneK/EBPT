@@ -11,7 +11,9 @@ import java.util.Map;
 
 /**
  * 自定义日志记录器
+ *
  */
+// TODO 找不到更好的方法前，暂时先这么用吧，其实有更好的方法。。。。
 public class EbptLogger {
     // 服务器名称
     public static final String SERVER_NAME = ServerInfoApi.SERVER_NAME;
