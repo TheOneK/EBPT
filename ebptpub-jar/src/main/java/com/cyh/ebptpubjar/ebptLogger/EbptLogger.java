@@ -13,7 +13,7 @@ import java.util.Map;
  * 自定义日志记录器
  *
  */
-// TODO 找不到更好的方法前，暂时先这么用吧，其实有更好的方法。。。。
+// TODO 找不到更好的方法前，暂时先这么用吧，其实有更好的方法。。。。，先做下测试，看看效果
 public class EbptLogger {
     // 服务器名称
     public static final String SERVER_NAME = ServerInfoApi.SERVER_NAME;
@@ -126,10 +126,14 @@ public class EbptLogger {
         }
     }
 
-    public static void main(String[]  args){
-        Map<String,Object> context = new HashMap<>();
-        context.put(Constant.EDPT_REQSEQNO,"bbbbb");
-        context.put(Constant.EDPT_SEQBUS,"cccc");
-        EbptLogger.info(EbptLogger.class,context,"xxxxxx:[{}]","aaaaa");
-    }
+//    /**
+//     * 用户单点测试
+//     * @param args
+//     */
+//    public static void main(String[]  args){
+//        Map<String,Object> context = new HashMap<>();
+//        context.put(Constant.EDPT_REQSEQNO,"bbbbb");
+//        context.put(Constant.EDPT_SEQBUS,"cccc");
+//        EbptLogger.info(EbptLogger.class,context,"xxxxxx:[{}]","aaaaa");
+//    }
 }
