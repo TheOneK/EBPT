@@ -12,7 +12,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
-public class testTest {
+public class testJunit {
     @BeforeAll
     static void beforeAll() {
         System.out.println("**--- Executed once before all test methods in this class ---**");
