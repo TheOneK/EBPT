@@ -4,7 +4,9 @@ import com.alibaba.druid.pool.DruidDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,9 +17,11 @@ import javax.sql.DataSource;
 
 //表示这个类为一个配置类
 @Configuration
+// 配置mybatis的接口类放的地方
+@MapperScan(basePackages = "cn.witsky.quota.dao.dao1", sqlSessionFactoryRef = "test1SqlSessionFactory")
 public class DataSourceConfig {
 
-
+    @Value("")
 //    @Bean("dynamicDataSource")
 //    public DataSource dynamicDataSource() {
 //        DynamicDataSource dynamicDataSource = new DynamicDataSource();
