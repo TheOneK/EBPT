@@ -5,6 +5,7 @@
     <groupId>com.cyh</groupId>
     <artifactId>EBPT</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <properties>
         <java.version>1.8</java.version>
         <version.spring.boot>2.5.3</version.spring.boot>
@@ -26,7 +27,6 @@
     </dependencyManagement>
     <name>电子商务考试</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
     <modules>
         <module>ebptonline-war</module>
         <module>ebptasy-war</module>
