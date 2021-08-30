@@ -27,6 +27,7 @@ public class EbptLogger {
             MDC.put("SERVER_NAME",SERVER_NAME);
         }else {
             MDC.put("SERVER_NAME",SERVER_NAME);
+            MDC.put(Constant.EDPT_REQSEQNO, (String) context.get(Constant.EDPT_REQSEQNO));
             MDC.put(Constant.EDPT_SEQBUS, (String) context.get(Constant.EDPT_SEQBUS));
         }
     }

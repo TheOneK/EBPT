@@ -10,6 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.HashMap;
 import java.util.Map;
+
 // 获取启动类，加载配置，确定装载 Spring 程序的装载方法，它回去寻找 主配置启动类（被 @SpringBootApplication 注解的）
 @SpringBootTest
 public class ebptLoggerTest {
@@ -19,8 +20,8 @@ public class ebptLoggerTest {
     public void testLogger() {
         MDC.clear();
         Thread.currentThread().setName("abcdefg");
-        MDC.put("SERVER_NAME","abcdefg");
-        System.out.println( "----------"+Thread.currentThread().getName());
+        MDC.put("SERVER_NAME", "abcdefg");
+        System.out.println("----------" + Thread.currentThread().getName());
         // 初始化上下文
         Map<String, Object> context = new HashMap<>();
         context.put(Constant.EDPT_REQSEQNO, "bbbbb");
