@@ -5,6 +5,7 @@ import com.cyh.ebptpubjar.common.Constant;
 import com.cyh.ebptpubjar.ebptLogger.EbptLogger;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.slf4j.MDC;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.HashMap;
@@ -16,6 +17,10 @@ public class ebptLoggerTest {
     @Test
     @DisplayName("Test method2 with condition")
     public void testLogger() {
+        MDC.clear();
+        Thread.currentThread().setName("abcdefg");
+        MDC.put("SERVER_NAME","abcdefg");
+        System.out.println( "----------"+Thread.currentThread().getName());
         // 初始化上下文
         Map<String, Object> context = new HashMap<>();
         context.put(Constant.EDPT_REQSEQNO, "bbbbb");
