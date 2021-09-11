@@ -14,6 +14,7 @@ public class EbptException extends Exception{
      */
     private EbptExceptionCode errorCode;
 
+
     public EbptException(){
         super();
     }
